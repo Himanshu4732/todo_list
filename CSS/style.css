@@ -13,6 +13,7 @@
   .strick{
     text-decoration: line-through;
     opacity: 0.5;
+    
   }
 
 .to-do-box{
@@ -141,10 +142,29 @@ margin-top: 100px;
 
 .item_added p{
     font-size: 20px;
-    width: 33%;
+    max-width: 33%;
 }
 ion-icon{
     cursor: pointer;
     color: white;
+}
+
+@media screen and (max-width: 500px){
+    .todo_cont{
+        width: 300px;
+    }
+    .text-input{
+        width: 100%;
+    }
+    .input_date{
+        width: 200px;
+    }
+    #todoinp{
+        flex-wrap: wrap;
+        gap:10px
+    }
+    .item_added p{
+        font-size: 15px;
+    }
 }
 
