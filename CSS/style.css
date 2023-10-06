@@ -17,13 +17,13 @@
 
 .to-do-box{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     background: linear-gradient(145deg, rgba(2,0,36,1) 20%, rgba(9,9,121,1) 73%, rgba(0,212,255,1) 100%);
     height: 100vh;
     width: 100%;
     z-index: -999;
-
+    
 }
 
 .todo_container{
@@ -43,7 +43,7 @@
     background-color: #000000b8;
 width: 470px;
     /* box-shadow: 8px 0px 14px 5px #0008; */
-
+margin-top: 100px;
 }
 
 #todoinp{
@@ -110,10 +110,17 @@ width: 470px;
 
 .addeditem{
     display: flex;
-    justify-content: space-between;
+    
     flex-direction: column;
     width: 98%;
     gap: 5px;
+    height: 50vh;
+    overflow-y: scroll;
+    
+}
+
+.addeditem::-webkit-scrollbar{
+    display: none;
 }
 
 .item_added{
@@ -134,7 +141,7 @@ width: 470px;
 
 .item_added p{
     font-size: 20px;
-
+    width: 33%;
 }
 ion-icon{
     cursor: pointer;
